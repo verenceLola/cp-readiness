@@ -1,0 +1,21 @@
+{
+    "extends": "airbnb",
+    "env": {
+        "node": true,
+        "es6": true,
+        "browser": true,
+        "jest": true
+      },
+    "parserOptions": {
+        "ecmaVersion": 2015,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+      },
+    "rules": {
+        "react/jsx-filename-extension": [1, {"extensions": [".js"]}],
+        "react/prefer-stateless-function": "off",
+        "no-param-reassign":"off"
+    }
+}
