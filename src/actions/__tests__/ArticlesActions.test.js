@@ -101,8 +101,6 @@ describe('getArticles actions', () => {
     ];
     const store = mockStore(dummyData);
     return store.dispatch(actions.fetchArticles()).then(() => {
-      console.log(store.getActions(), 'nanana');
-      console.log(expectedActions, 'nanana3');
       expect(store.getActions()).toEqual(expectedActions);
     });
   });

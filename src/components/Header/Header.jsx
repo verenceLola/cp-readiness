@@ -6,7 +6,7 @@ import {
 import ahLogoWide from './ah-logo-wide.svg';
 
 
-export const toggleSideBar = () => {
+const toggleSideBar = () => {
   const sideBar = document.getElementById('sidebar');
   const pusher = document.getElementById('pusher');
   sideBar.classList.toggle('visible');
