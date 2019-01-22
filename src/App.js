@@ -6,6 +6,7 @@ import ArticleContainerComponent from './components/Articles/ArticlesContainer';
 import RegistrationPageComponent from './components/Authentication/Registration/RegistrationPage';
 import Profile from './containers/ProfileContainer';
 import Footer from './components/Footer/Footer';
+import UserSpecifcArticlesContainer from './components/Articles/UserSpecifcArticlesContainer';
 
 class App extends Component {
   render() {
@@ -13,12 +14,11 @@ class App extends Component {
       <React.Fragment>
         <BrowserRouter>
           <Switch>
-            {/* exact looks for the exact path,
-            it prevents the home page from being rendered in all the pages */}
             <Route path="/" component={ArticleContainerComponent} exact />
             <Route path="/articles" component={ArticleContainerComponent} exact />
             <Route path="/register" component={RegistrationPageComponent} exact />
             <Route path="/profile" exact component={Profile} />
+            <Route path="/myarticles" exact component={UserSpecifcArticlesContainer} />
             <Route component={Error} />
           </Switch>
         </BrowserRouter>
