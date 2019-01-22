@@ -7,6 +7,8 @@ import RegistrationPageComponent from './components/Authentication/Registration/
 import Profile from './containers/ProfileContainer';
 import Footer from './components/Footer/Footer';
 import UserSpecifcArticlesContainer from './components/Articles/UserSpecifcArticlesContainer';
+import LoginContainer from './components/Authentication/Login/LoginContainer';
+
 
 class App extends Component {
   render() {
@@ -19,6 +21,7 @@ class App extends Component {
             <Route path="/register" component={RegistrationPageComponent} exact />
             <Route path="/profile" exact component={Profile} />
             <Route path="/myarticles" exact component={UserSpecifcArticlesContainer} />
+            <Route exact path="/login" component={LoginContainer} />
             <Route component={Error} />
           </Switch>
         </BrowserRouter>

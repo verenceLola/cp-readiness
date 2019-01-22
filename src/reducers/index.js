@@ -3,6 +3,7 @@ import registrationReducer from './registrationReducer';
 import articleReducer from './articleReducer';
 import profileDetails from './profileReducer';
 import ownArticlesReducer from './userSpecificReducer';
+import loginReducer from './loginReducers';
 
 // combines reducers for the application
 const rootReducer = combineReducers({
@@ -10,6 +11,7 @@ const rootReducer = combineReducers({
   articles: articleReducer,
   profileDetails,
   ownArticles: ownArticlesReducer,
+  loginReducer,
 });
 
 export default rootReducer;
